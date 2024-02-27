@@ -1,0 +1,40 @@
+# Windows
+*.exe
+*:Zone.Identifier
+Thumbs.db
+Desktop.ini
+
+# Archives
+*.rar
+*.zip
+
+# Windows USB drivers
+CH341SER/
+CH341SER.EXE
+
+# Android build artifacts
+SeniorTrial/SeniorProjectTrial/SeniorProjectTrial/.gradle/
+SeniorTrial/SeniorProjectTrial/SeniorProjectTrial/app/build/
+SeniorTrial/SeniorProjectTrial/SeniorProjectTrial/build/
+*.apk
+*.class
+*.dex
+*.jar
+local.properties
+
+# Gradle
+.gradle/
+build/
+
+# IDE
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf
+
+# Compiled Arduino/C++
+*.o
+*.elf
+*.hex
+*.bin
