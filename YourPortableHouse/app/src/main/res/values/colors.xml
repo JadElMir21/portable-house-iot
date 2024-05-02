@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="custom_lightGrey">#f5f5f5</color>
+    <color name="custom_grey">#E0E0E0</color>
+    <color name="custom_darkGrey">#424242</color>
+    <color name="custom_lightBlue">#E0E0E0</color>
+    <color name="custom_orangePastel1">#FFCCBC </color>
+    <color name="custom_orangePastel2">#FFAB91 </color>
+    <color name="custom_orangePastel3">#FFCCBC </color>
+    <color name="custom_orange1">#EF5350 </color>
+    <color name="custom_orange2">#FF7043 </color>
+    <color name="custom_orange">#F44336</color>
+    <color name="custom_pink1">#FF8A80 </color>
+    <color name="custom_pink">#ffccdd </color>
+    <color name="custom_pastelPink">#FBE9E7</color>
+
+    <color name="custom_splashGrey">#fbfbfb</color>
+    <color name="custom_splashOrange">#f3a362</color>
+
+    <color name="custom_mainBeige">#f4cbab</color>
+    <color name="custom_mainOrange">#f15e43</color>
+    <color name="custom_mainPurple">#7a3837</color>
+
+</resources>

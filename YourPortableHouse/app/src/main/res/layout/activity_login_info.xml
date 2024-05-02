@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginInfo"
+    android:orientation="vertical"
+    android:background="@color/white">
+   <include layout="@layout/toolbar"/>
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="233dp"
+       android:layout_height="156dp"
+       android:layout_marginLeft="85dp"
+       android:layout_marginTop="40dp"
+       android:src="@drawable/perinfo" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:text="@string/perInfo"
+       android:textColor="@color/custom_darkGrey"
+       android:textSize="18dp"
+       android:textStyle="bold" />
+
+
+   <LinearLayout
+       android:layout_width="360dp"
+       android:layout_height="276dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="80dp"
+       android:background="@drawable/roundbackground"
+       android:orientation="vertical">
+
+
+      <!-- <EditText
+           android:layout_width="300dp"
+           android:layout_height="49dp"
+           android:layout_gravity="center"
+           android:background="@drawable/roundtextoutline"
+           android:layout_marginTop="28dp"
+           android:hint="@string/gender"
+           android:paddingLeft="15dp"
+           android:paddingTop="7dp"
+           android:paddingBottom="7dp"
+           android:textSize="16dp" />-->
+
+
+      <TextView
+          android:layout_width="103dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="35dp"
+          android:layout_marginTop="20dp"
+          android:text="@string/name"
+          android:textColor="@color/custom_orange"
+          android:textSize="16dp"
+          android:textStyle="italic" />
+
+      <TextView
+          android:id="@+id/name"
+          android:layout_width="300dp"
+          android:layout_height="49dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/roundtextoutline"
+          android:paddingLeft="15dp"
+          android:paddingTop="7dp"
+          android:paddingBottom="7dp"
+          android:textSize="16dp" />
+
+
+
+      <TextView
+          android:layout_width="104dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="35dp"
+          android:layout_marginTop="30dp"
+          android:text="@string/em"
+          android:textColor="@color/custom_orange"
+          android:textSize="16dp"
+          android:textStyle="italic" />
+
+      <TextView
+          android:id="@+id/email"
+          android:layout_width="300dp"
+          android:layout_height="49dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/roundtextoutline"
+          android:paddingLeft="15dp"
+          android:paddingTop="7dp"
+          android:paddingBottom="7dp"
+          android:textSize="16dp" />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="400dp"
+       android:layout_height="100dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="20dp"
+       android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/logout"
+          android:layout_width="105dp"
+          android:layout_height="39dp"
+          android:layout_marginLeft="0dp"
+          android:layout_marginTop="20dp"
+          android:background="@android:color/transparent"
+          android:text="@string/logout"
+          android:textColor="@color/custom_orange1"
+          android:textStyle="bold"
+          android:onClick="logout"/>
+
+   <Button
+       android:id="@+id/delete"
+       android:layout_width="105dp"
+       android:layout_height="39dp"
+       android:layout_marginLeft="162dp"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/nextbtn"
+       android:text="@string/delete"
+       android:textColor="@color/white"
+       android:textStyle="bold"
+       android:onClick="delete"/>
+
+   />
+
+   </LinearLayout>
+
+   <ProgressBar
+       android:id="@+id/progressBar"
+       style="?android:attr/progressBarStyleLarge"
+       android:layout_gravity="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:visibility="gone"/>
+
+
+   <!-- <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/homename"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/homephone"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />
+
+
+
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/fullname"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/memphone"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/memgender"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/membirthdate"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/bloodType"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/med"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/deas"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/roundrectext"
+        android:paddingLeft="15dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textSize="16dp" />-->
+
+</LinearLayout>

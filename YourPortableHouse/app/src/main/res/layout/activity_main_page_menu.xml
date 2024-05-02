@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:background="@color/custom_mainBeige">
+
+
+    <ImageView
+        android:layout_width="193dp"
+        android:layout_height="139dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundshapeimg"
+        tools:srcCompat="@drawable/main" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/wlc"
+        android:textColor="@color/custom_mainOrange"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="353dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/whiteroundbg"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/maintextoutline"
+            android:paddingLeft="11dp"
+            android:paddingTop="17dp"
+            android:text="Put on your third eye to watch your house"
+            android:textColor="@color/custom_mainPurple"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/eyeball" />
+
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/maintextoutline"
+            android:paddingLeft="11dp"
+            android:paddingTop="16dp"
+            android:text="Access your magic hand to control your house"
+            android:textColor="@color/custom_mainPurple"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/magichand" />
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main_page"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
+
+
+</LinearLayout>

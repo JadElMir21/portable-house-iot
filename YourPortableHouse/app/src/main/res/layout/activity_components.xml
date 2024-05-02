@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".components"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/toolbar"/>
+    <ImageView
+        android:layout_width="266dp"
+        android:layout_height="166dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/control" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/hand"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/pastelroundbackground"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/roundshapeimg"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/led1"
+            />
+        </LinearLayout>
+
+
+        <Switch
+            android:id="@+id/swit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="25dp"
+            android:checked="false"
+            android:text="LIGHT" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

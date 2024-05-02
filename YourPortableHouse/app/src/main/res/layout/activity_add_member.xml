@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addMember"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="229dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="50dp"
+        tools:srcCompat="@drawable/members"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addMem"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/custom_darkGrey"
+        android:textSize="18dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        android:background="@drawable/roundbackground">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundtextoutline"
+            android:layout_marginTop="30dp"
+            android:hint="@string/fullName"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundtextoutline"
+            android:layout_marginTop="20dp"
+            android:hint="@string/pass"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/conPass"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundtextoutline"
+            android:layout_marginTop="20dp"
+            android:hint="@string/confirm"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/phoneNbr"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundtextoutline"
+            android:layout_marginTop="20dp"
+            android:hint="@string/phoneReq"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/nextbtn"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
