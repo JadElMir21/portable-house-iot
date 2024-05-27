@@ -22,8 +22,8 @@ A senior project implementing a portable smart home system using ESP8266/ESP32 m
 ```
 
 ## Team
-- Jad Hassan Taha
-- Sally
+- Jad El Mir
+- Sally Hamzeh
 
 ## Technologies
 - Microcontrollers: ESP8266, ESP32, ESP32-CAM
